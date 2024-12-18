@@ -1,0 +1,107 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #003366; /* Deep Blue Background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background-color: #efd3a4; /* Beige Background */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    color: #182471; /* Orange Text */
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+/* Form Elements */
+form {
+    margin: 1.5rem 0;
+}
+
+label {
+    display: block;
+    color: #003366;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ff6600;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 1rem;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #003366;
+    box-shadow: 0 0 5px #003366;
+}
+
+/* Buttons */
+.btn {
+    background-color: #f85f07;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.7);
+}
+
+.signup-link {
+    margin-top: 1rem;
+}
+
+.signup-btn {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.signup-btn:hover {
+    color: #cc5200;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
